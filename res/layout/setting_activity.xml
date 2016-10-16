@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/help_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/diary_view_bg" >
+
+<LinearLayout
+        android:id="@+id/voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <com.zhang.voice.diary.view.MyWin8Button
+            android:id="@+id/diary_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/voice_start" />
+    </LinearLayout>
+    
+<LinearLayout
+        android:id="@+id/remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/voice"
+        android:orientation="horizontal" >
+
+        <com.zhang.voice.diary.view.MyWin8Button
+            android:id="@+id/diary_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/remind" />
+    </LinearLayout>
+	
+    
+    <LinearLayout
+        android:id="@+id/scirit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/remind"
+        android:orientation="vertical" >
+
+        <com.zhang.voice.diary.view.MyWin8Button
+            android:id="@+id/diary_scirit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:src="@drawable/scirit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/scirit" >
+
+        <com.zhang.voice.diary.view.MyWin8Button
+            android:id="@+id/diary_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:src="@drawable/help" />
+    </LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+        android:layout_below="@+id/help" >
+
+        <com.zhang.voice.diary.view.MyWin8Button
+            android:id="@+id/diary_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:src="@drawable/about" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/tomyself"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/about" >
+
+        <com.zhang.voice.diary.view.MyWin8Button
+            android:id="@+id/diary_tomyself"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:src="@drawable/tomyself" />
+    </LinearLayout>
+    
+</RelativeLayout>
